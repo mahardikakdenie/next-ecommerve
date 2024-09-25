@@ -22,7 +22,7 @@ export default function Home() {
 											<Card
 												link={`/product/${product?.link}`}
 												cardClass='w-[400px] h-[200px] relative'
-												hSize='100'>
+									    >
 												{product && (
 													<Image
 														src={product.image}

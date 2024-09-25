@@ -4,15 +4,13 @@ import React from "react";
 interface CardProps {
   children: React.ReactNode;
   link: string;
-  hSize?: string;
   cardClass?: string;
 }
 
 export const Card: React.FC<CardProps> = ({ 
   children, 
   link, 
-  hSize = '400', 
-  cardClass = 'className={`relative block aspect-square h-[${hSize}px] w-full`}' 
+  cardClass = 'className={`relative block aspect-square h-[200px] w-full`}' 
 }): JSX.Element => {
   return (
     <Link 
