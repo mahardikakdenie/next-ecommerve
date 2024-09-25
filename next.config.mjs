@@ -6,7 +6,7 @@ const nextConfig = {
                 hostname: "i.ibb.co.com",
             },
             {
-                hostname: "cdn.myanimelist.net",
+                hostname: "encrypted-tbn0.gstatic.com",
             },
             {
                 hostname: "api.jikan.moe",
