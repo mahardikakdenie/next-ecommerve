@@ -23,3 +23,45 @@ button {
 .animate-carousel {
   animation: marquee 60s linear infinite;
 }
+
+/* Untuk browser berbasis WebKit seperti Chrome, Safari, dan Edge */
+::-webkit-scrollbar {
+  width: 1px; /* Lebar scrollbar vertikal */
+  height: 1px; /* Tinggi scrollbar horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Warna thumb (penunjuk scroll) */
+  border-radius: 4px; /* Membuat sudut thumb melengkung */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Warna thumb saat di-hover */
+}
+
+::-webkit-scrollbar-track {
+  width: 1px;
+  @apply bg-neutral-600;
+}
+
+/* Untuk Firefox */
+* {
+  scrollbar-width: thin; /* Membuat scrollbar lebih tipis */
+  scrollbar-color: #888 #161414; /* Thumb warna #888, track warna #f1f1f1 */
+  scrollbar-width: 2px;
+}
+
+/* Tambahan opsional: Membuat scrollbar kecil di area tertentu */
+.scroll-container::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  @apply bg-neutral-600;
+}

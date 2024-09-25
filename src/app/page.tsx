@@ -8,7 +8,7 @@ const carouselProducts = [...products, ...products, ...products];
 export default function Home() {
 	return (
 		<div className='font-[family-name:var(--font-geist-sans)]'>
-			<main className='p-10'>
+			<main className='px-10 scroll-container'>
 				<Grid />
 				<div className='mt-2 max-h-[200px]'>
 					<div className='w-full overflow-x-auto pb-6 pt-1'>
