@@ -1,7 +1,7 @@
 // import { Card } from '@/components/elements/Card';
 import { InfiniteCarousel } from '@/components/elements/InfiniteCarousel';
 import { Grid } from '@/components/main/Grid';
-import { Product, products } from '@/libs/statics';
+import {products } from '@/libs/statics';
 // import Image from 'next/image';
 
 // const carouselProducts = [...products, ...products, ...products];
