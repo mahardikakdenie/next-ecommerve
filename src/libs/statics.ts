@@ -6,7 +6,7 @@ export interface Product {
     image: string;
 }
 
-export const products: Array<Product | null> = [
+export const products: Array<Product> = [
     {
         id: 1,
         name: 'Circles T-shirt',
