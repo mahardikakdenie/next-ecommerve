@@ -3,7 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import { Navbar } from '@/components/layouts/Navbar';
 import { Footer } from '@/components/layouts/Footer';
-import {products } from '@/libs/statics';
+import { products } from '@/libs/statics';
 import { InfiniteCarousel } from '@/components/elements/InfiniteCarousel';
 
 const geistSans = localFont({
@@ -35,13 +35,15 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 				<Navbar />
-				<div className='py-10'>
+				<div className='py-10 block'>
 					{children}
 					<div className='mt-2 max-h-[200px]'>
-					<div className='w-full overflow-x-auto pb-6 pt-1'>
-						{products && <InfiniteCarousel products={products} />}
+						<div className='w-full overflow-x-auto pb-6 pt-1'>
+							{products && (
+								<InfiniteCarousel products={products} />
+							)}
+						</div>
 					</div>
-				</div>
 				</div>
 				<Footer />
 			</body>
