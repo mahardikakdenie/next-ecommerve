@@ -25,8 +25,6 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-  // const [isCartModalVisible, setIsCartModalVisible] = useState(false); 
-  let isCartModalVisible = false;
 	return (
 		<html lang='en'>
 			<body
