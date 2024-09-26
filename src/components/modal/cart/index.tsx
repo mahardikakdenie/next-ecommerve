@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { HeaderCartModal } from './header';
+import { CartModalLayout } from './layout';
 
 
 export const CartModal = () => {
@@ -23,9 +24,9 @@ export const CartModal = () => {
 			</div>
 			{/*  */}
 			{isModalVisible && (
-				<div className='fixed bottom-0 z-[99999] right-0 top-0 flex h-full w-full flex-col border-l border-neutral-200 bg-white/80 p-6 text-black backdrop-blur-xl md:w-[390px] dark:border-neutral-700 dark:bg-black/80 dark:text-white'>
+				<CartModalLayout>
 				<HeaderCartModal close={() => setIsModalVisible(false)} />
-			</div>)}
+			</CartModalLayout>)}
 		</>
 	);
 };
