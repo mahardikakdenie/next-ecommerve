@@ -7,9 +7,9 @@ export const CartModalBody = (): JSX.Element => {
 			<ul className=''>
 				<li className='flex w-full flex-col border-b border-neutral-300 dark:border-neutral-700'>
 					<div className='relative grid grid-cols-4 px-1 py-4'>
-						<div className='border border-neutral-600 rounded-lg p-2 h-[60px] w-[60px] flex justify-center items-center'>
+						<div className='border border-neutral-600 rounded-lg p-2 h-[60px] w-[60px] flex justify-center items-center mx-auto'>
 							<Image
-								src='https://i.ibb.co.com/dBvBn7m/bag-1-dark.jpg'
+								src='https://i.ibb.co.com/C59xpBc/mug-1.jpg'
 								alt='https://i.ibb.co.com/dBvBn7m/bag-1-dark.jpg'
 								width={30}
 								height={30}
@@ -22,10 +22,10 @@ export const CartModalBody = (): JSX.Element => {
 							className='z-30 flex col-span-2 w-full'>
 							<div className='flex flex-1 flex-col text-base'>
 								<span className='leading-tight font-bold'>
-									Acme Hoodie
+                                    Acme Drawstring Bag
 								</span>
 								<p className='text-sm text-neutral-500 dark:text-neutral-400'>
-									S
+                                    White / 10 x 15 inch
 								</p>
 							</div>
 						</Link>
