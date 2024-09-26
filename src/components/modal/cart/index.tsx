@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { HeaderCartModal } from './header';
 import { CartModalLayout } from './layout';
+import { CartModalBody } from './body';
 
 
 export const CartModal = () => {
@@ -24,8 +25,9 @@ export const CartModal = () => {
 			</div>
 			{/*  */}
 			{isModalVisible && (
-				<CartModalLayout>
+			<CartModalLayout>
 				<HeaderCartModal close={() => setIsModalVisible(false)} />
+				<CartModalBody />
 			</CartModalLayout>)}
 		</>
 	);
