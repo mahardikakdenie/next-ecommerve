@@ -3,11 +3,7 @@ import LogoSquare from '../LogoArea';
 import React from 'react';
 import { CartModal } from '../modal/cart';
 
-interface NavbarInterface {
-	// openCart: () => void,
-};
-
-export const Navbar: React.FC<NavbarInterface> = () => {
+export const Navbar = () => {
 	const SITE_NAME = 'NS THEME';
 	return (
 		<nav className='relative grid grid-cols-3 p-4 lg:px-6 w-full'>
