@@ -2,9 +2,6 @@
 import { InfiniteCarousel } from '@/components/elements/InfiniteCarousel';
 import { Grid } from '@/components/main/Grid';
 import {products } from '@/libs/statics';
-// import Image from 'next/image';
-
-// const carouselProducts = [...products, ...products, ...products];
 
 export default function Home() {
 	return (
